@@ -1,0 +1,60 @@
+<%= form_with(model: @course) do |form| %>
+  <% if @course.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(@course.errors.count, "error") %> prohibited this course from being saved:</h2>
+
+      <ul> 
+        <% @course.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div>
+    <%= form.label :name %><br>
+    <%= form.text_field :name , class: "form-control"%>
+  </div>
+  <% if current_user.school_admin? %>
+  <div>
+    <%= form.label :bacth %><br>
+    <%= form.collection_select :batch_id, Batch.available_batch(current_user.own_school&.id),:id,:name ,{}, class: "form-control"%>
+  </div>
+  <% end %>
+  <% if current_user.admin? %>
+  <div>
+    <%= form.label :bacth %><br>
+    <%= form.collection_select :batch_id, Batch.all,:id,:name ,{}, class: "form-control"%>
+  </div>
+  <% end %>
+  <div>
+    <%= form.label :description %><br>
+    <%= form.text_area :description, class: "form-control" %>
+  </div>
+  <div>
+    <%= form.label :start_at %><br>
+    <%= form.time_field :start_at , class: "form-control"%>
+  </div>
+  <div>
+    <%= form.label :end_at %><br>
+    <%= form.time_field :end_at , class: "form-control"%>
+  </div>
+  <div>
+    <%= form.label :fees %><br>
+    <%= form.text_field :fees , class: "form-control"%>
+  </div>
+  <div>
+    <%= form.label :tutor_name %><br>
+    <%= form.text_field :tutor_name, class: "form-control" %>
+  </div>
+  <div>
+    <%= form.label :course_duration %><br>
+    <%= form.text_field :course_duration , class: "form-control"%>
+  </div>
+  <div>
+    <%= form.label :sub_name %><br>
+    <%= form.text_field :sub_name, class: "form-control" %>
+  </div>
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

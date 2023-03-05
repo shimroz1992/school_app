@@ -1,0 +1,523 @@
+2023-03-02 21:59:24[WARN] user: ror
+GET /courses/request_review
+USE eager loading detected
+  Connection => [:student]
+  Add to your query: .includes([:student])
+Call stack
+  (rdbg)//home/ror/school_app/app/controllers/courses_controller.rb:1:in `request_review'
+  /home/ror/school_app/app/controllers/courses_controller.rb:69:in `request_review'
+
+2023-03-02 21:59:24[WARN] user: ror
+GET /courses/request_review
+USE eager loading detected
+  Connection => [:school]
+  Add to your query: .includes([:school])
+Call stack
+  (rdbg)//home/ror/school_app/app/controllers/courses_controller.rb:1:in `request_review'
+  /home/ror/school_app/app/controllers/courses_controller.rb:69:in `request_review'
+
+2023-03-02 21:59:24[WARN] user: ror
+GET /courses/request_review
+USE eager loading detected
+  Connection => [:course]
+  Add to your query: .includes([:course])
+Call stack
+  (rdbg)//home/ror/school_app/app/controllers/courses_controller.rb:1:in `request_review'
+  /home/ror/school_app/app/controllers/courses_controller.rb:69:in `request_review'
+
+2023-03-02 21:59:24[WARN] user: ror
+GET /courses/request_review
+USE eager loading detected
+  Connection => [:batch]
+  Add to your query: .includes([:batch])
+Call stack
+  (rdbg)//home/ror/school_app/app/controllers/courses_controller.rb:1:in `request_review'
+  /home/ror/school_app/app/controllers/courses_controller.rb:69:in `request_review'
+
+2023-03-02 22:00:48[WARN] user: ror
+GET /courses/request_review
+USE eager loading detected
+  Connection => [:course]
+  Add to your query: .includes([:course])
+Call stack
+  /home/ror/school_app/app/views/courses/request_review.html.erb:13:in `block in _app_views_courses_request_review_html_erb___1935111634060434521_684200'
+  /home/ror/school_app/app/views/courses/request_review.html.erb:11:in `_app_views_courses_request_review_html_erb___1935111634060434521_684200'
+
+2023-03-02 22:00:48[WARN] user: ror
+GET /courses/request_review
+USE eager loading detected
+  Connection => [:student]
+  Add to your query: .includes([:student])
+Call stack
+  /home/ror/school_app/app/views/courses/request_review.html.erb:14:in `block in _app_views_courses_request_review_html_erb___1935111634060434521_684200'
+  /home/ror/school_app/app/views/courses/request_review.html.erb:11:in `_app_views_courses_request_review_html_erb___1935111634060434521_684200'
+
+2023-03-02 22:00:48[WARN] user: ror
+GET /courses/request_review
+USE eager loading detected
+  Connection => [:batch]
+  Add to your query: .includes([:batch])
+Call stack
+  /home/ror/school_app/app/views/courses/request_review.html.erb:15:in `block in _app_views_courses_request_review_html_erb___1935111634060434521_684200'
+  /home/ror/school_app/app/views/courses/request_review.html.erb:11:in `_app_views_courses_request_review_html_erb___1935111634060434521_684200'
+
+2023-03-02 22:00:48[WARN] user: ror
+GET /courses/request_review
+USE eager loading detected
+  Connection => [:school]
+  Add to your query: .includes([:school])
+Call stack
+  /home/ror/school_app/app/views/courses/request_review.html.erb:16:in `block in _app_views_courses_request_review_html_erb___1935111634060434521_684200'
+  /home/ror/school_app/app/views/courses/request_review.html.erb:11:in `_app_views_courses_request_review_html_erb___1935111634060434521_684200'
+
+2023-03-02 22:01:47[WARN] user: ror
+GET /courses/request_review
+USE eager loading detected
+  Connection => [:course]
+  Add to your query: .includes([:course])
+Call stack
+  /home/ror/school_app/app/views/courses/request_review.html.erb:13:in `block in _app_views_courses_request_review_html_erb___1935111634060434521_684200'
+  /home/ror/school_app/app/views/courses/request_review.html.erb:11:in `_app_views_courses_request_review_html_erb___1935111634060434521_684200'
+
+2023-03-02 22:01:47[WARN] user: ror
+GET /courses/request_review
+USE eager loading detected
+  Connection => [:student]
+  Add to your query: .includes([:student])
+Call stack
+  /home/ror/school_app/app/views/courses/request_review.html.erb:14:in `block in _app_views_courses_request_review_html_erb___1935111634060434521_684200'
+  /home/ror/school_app/app/views/courses/request_review.html.erb:11:in `_app_views_courses_request_review_html_erb___1935111634060434521_684200'
+
+2023-03-02 22:01:47[WARN] user: ror
+GET /courses/request_review
+USE eager loading detected
+  Connection => [:batch]
+  Add to your query: .includes([:batch])
+Call stack
+  /home/ror/school_app/app/views/courses/request_review.html.erb:15:in `block in _app_views_courses_request_review_html_erb___1935111634060434521_684200'
+  /home/ror/school_app/app/views/courses/request_review.html.erb:11:in `_app_views_courses_request_review_html_erb___1935111634060434521_684200'
+
+2023-03-02 22:01:47[WARN] user: ror
+GET /courses/request_review
+USE eager loading detected
+  Connection => [:school]
+  Add to your query: .includes([:school])
+Call stack
+  /home/ror/school_app/app/views/courses/request_review.html.erb:16:in `block in _app_views_courses_request_review_html_erb___1935111634060434521_684200'
+  /home/ror/school_app/app/views/courses/request_review.html.erb:11:in `_app_views_courses_request_review_html_erb___1935111634060434521_684200'
+
+2023-03-02 22:07:30[WARN] user: ror
+GET /courses/request_review
+USE eager loading detected
+  Connection => [:course]
+  Add to your query: .includes([:course])
+Call stack
+  /home/ror/school_app/app/views/courses/request_review.html.erb:13:in `block in _app_views_courses_request_review_html_erb___1935111634060434521_699520'
+  /home/ror/school_app/app/views/courses/request_review.html.erb:11:in `_app_views_courses_request_review_html_erb___1935111634060434521_699520'
+
+2023-03-02 22:07:30[WARN] user: ror
+GET /courses/request_review
+USE eager loading detected
+  Connection => [:student]
+  Add to your query: .includes([:student])
+Call stack
+  /home/ror/school_app/app/views/courses/request_review.html.erb:14:in `block in _app_views_courses_request_review_html_erb___1935111634060434521_699520'
+  /home/ror/school_app/app/views/courses/request_review.html.erb:11:in `_app_views_courses_request_review_html_erb___1935111634060434521_699520'
+
+2023-03-02 22:07:30[WARN] user: ror
+GET /courses/request_review
+USE eager loading detected
+  Connection => [:batch]
+  Add to your query: .includes([:batch])
+Call stack
+  /home/ror/school_app/app/views/courses/request_review.html.erb:15:in `block in _app_views_courses_request_review_html_erb___1935111634060434521_699520'
+  /home/ror/school_app/app/views/courses/request_review.html.erb:11:in `_app_views_courses_request_review_html_erb___1935111634060434521_699520'
+
+2023-03-02 22:07:30[WARN] user: ror
+GET /courses/request_review
+USE eager loading detected
+  Connection => [:school]
+  Add to your query: .includes([:school])
+Call stack
+  /home/ror/school_app/app/views/courses/request_review.html.erb:16:in `block in _app_views_courses_request_review_html_erb___1935111634060434521_699520'
+  /home/ror/school_app/app/views/courses/request_review.html.erb:11:in `_app_views_courses_request_review_html_erb___1935111634060434521_699520'
+
+2023-03-02 22:07:54[WARN] user: ror
+GET /courses/request_review
+USE eager loading detected
+  Connection => [:course]
+  Add to your query: .includes([:course])
+Call stack
+  /home/ror/school_app/app/views/courses/request_review.html.erb:15:in `block in _app_views_courses_request_review_html_erb___1935111634060434521_761820'
+  /home/ror/school_app/app/views/courses/request_review.html.erb:12:in `_app_views_courses_request_review_html_erb___1935111634060434521_761820'
+
+2023-03-02 22:07:54[WARN] user: ror
+GET /courses/request_review
+USE eager loading detected
+  Connection => [:student]
+  Add to your query: .includes([:student])
+Call stack
+  /home/ror/school_app/app/views/courses/request_review.html.erb:16:in `block in _app_views_courses_request_review_html_erb___1935111634060434521_761820'
+  /home/ror/school_app/app/views/courses/request_review.html.erb:12:in `_app_views_courses_request_review_html_erb___1935111634060434521_761820'
+
+2023-03-02 22:07:54[WARN] user: ror
+GET /courses/request_review
+USE eager loading detected
+  Connection => [:batch]
+  Add to your query: .includes([:batch])
+Call stack
+  /home/ror/school_app/app/views/courses/request_review.html.erb:17:in `block in _app_views_courses_request_review_html_erb___1935111634060434521_761820'
+  /home/ror/school_app/app/views/courses/request_review.html.erb:12:in `_app_views_courses_request_review_html_erb___1935111634060434521_761820'
+
+2023-03-02 22:07:54[WARN] user: ror
+GET /courses/request_review
+USE eager loading detected
+  Connection => [:school]
+  Add to your query: .includes([:school])
+Call stack
+  /home/ror/school_app/app/views/courses/request_review.html.erb:18:in `block in _app_views_courses_request_review_html_erb___1935111634060434521_761820'
+  /home/ror/school_app/app/views/courses/request_review.html.erb:12:in `_app_views_courses_request_review_html_erb___1935111634060434521_761820'
+
+2023-03-02 22:08:22[WARN] user: ror
+GET /courses/request_review
+USE eager loading detected
+  Connection => [:course]
+  Add to your query: .includes([:course])
+Call stack
+  /home/ror/school_app/app/views/courses/request_review.html.erb:15:in `block in _app_views_courses_request_review_html_erb___1935111634060434521_762080'
+  /home/ror/school_app/app/views/courses/request_review.html.erb:12:in `_app_views_courses_request_review_html_erb___1935111634060434521_762080'
+
+2023-03-02 22:08:22[WARN] user: ror
+GET /courses/request_review
+USE eager loading detected
+  Connection => [:student]
+  Add to your query: .includes([:student])
+Call stack
+  /home/ror/school_app/app/views/courses/request_review.html.erb:16:in `block in _app_views_courses_request_review_html_erb___1935111634060434521_762080'
+  /home/ror/school_app/app/views/courses/request_review.html.erb:12:in `_app_views_courses_request_review_html_erb___1935111634060434521_762080'
+
+2023-03-02 22:08:22[WARN] user: ror
+GET /courses/request_review
+USE eager loading detected
+  Connection => [:batch]
+  Add to your query: .includes([:batch])
+Call stack
+  /home/ror/school_app/app/views/courses/request_review.html.erb:17:in `block in _app_views_courses_request_review_html_erb___1935111634060434521_762080'
+  /home/ror/school_app/app/views/courses/request_review.html.erb:12:in `_app_views_courses_request_review_html_erb___1935111634060434521_762080'
+
+2023-03-02 22:08:22[WARN] user: ror
+GET /courses/request_review
+USE eager loading detected
+  Connection => [:school]
+  Add to your query: .includes([:school])
+Call stack
+  /home/ror/school_app/app/views/courses/request_review.html.erb:18:in `block in _app_views_courses_request_review_html_erb___1935111634060434521_762080'
+  /home/ror/school_app/app/views/courses/request_review.html.erb:12:in `_app_views_courses_request_review_html_erb___1935111634060434521_762080'
+
+2023-03-02 22:08:39[WARN] user: ror
+GET /courses/request_review
+USE eager loading detected
+  Connection => [:course]
+  Add to your query: .includes([:course])
+Call stack
+  /home/ror/school_app/app/views/courses/request_review.html.erb:15:in `block in _app_views_courses_request_review_html_erb___1935111634060434521_762160'
+  /home/ror/school_app/app/views/courses/request_review.html.erb:12:in `_app_views_courses_request_review_html_erb___1935111634060434521_762160'
+
+2023-03-02 22:08:39[WARN] user: ror
+GET /courses/request_review
+USE eager loading detected
+  Connection => [:student]
+  Add to your query: .includes([:student])
+Call stack
+  /home/ror/school_app/app/views/courses/request_review.html.erb:16:in `block in _app_views_courses_request_review_html_erb___1935111634060434521_762160'
+  /home/ror/school_app/app/views/courses/request_review.html.erb:12:in `_app_views_courses_request_review_html_erb___1935111634060434521_762160'
+
+2023-03-02 22:08:39[WARN] user: ror
+GET /courses/request_review
+USE eager loading detected
+  Connection => [:batch]
+  Add to your query: .includes([:batch])
+Call stack
+  /home/ror/school_app/app/views/courses/request_review.html.erb:17:in `block in _app_views_courses_request_review_html_erb___1935111634060434521_762160'
+  /home/ror/school_app/app/views/courses/request_review.html.erb:12:in `_app_views_courses_request_review_html_erb___1935111634060434521_762160'
+
+2023-03-02 22:08:39[WARN] user: ror
+GET /courses/request_review
+USE eager loading detected
+  Connection => [:school]
+  Add to your query: .includes([:school])
+Call stack
+  /home/ror/school_app/app/views/courses/request_review.html.erb:18:in `block in _app_views_courses_request_review_html_erb___1935111634060434521_762160'
+  /home/ror/school_app/app/views/courses/request_review.html.erb:12:in `_app_views_courses_request_review_html_erb___1935111634060434521_762160'
+
+2023-03-02 22:10:13[WARN] user: ror
+GET /courses/request_review
+USE eager loading detected
+  Connection => [:course]
+  Add to your query: .includes([:course])
+Call stack
+  /home/ror/school_app/app/views/courses/request_review.html.erb:15:in `block in _app_views_courses_request_review_html_erb___1935111634060434521_762260'
+  /home/ror/school_app/app/views/courses/request_review.html.erb:12:in `_app_views_courses_request_review_html_erb___1935111634060434521_762260'
+
+2023-03-02 22:10:13[WARN] user: ror
+GET /courses/request_review
+USE eager loading detected
+  Connection => [:student]
+  Add to your query: .includes([:student])
+Call stack
+  /home/ror/school_app/app/views/courses/request_review.html.erb:16:in `block in _app_views_courses_request_review_html_erb___1935111634060434521_762260'
+  /home/ror/school_app/app/views/courses/request_review.html.erb:12:in `_app_views_courses_request_review_html_erb___1935111634060434521_762260'
+
+2023-03-02 22:10:13[WARN] user: ror
+GET /courses/request_review
+USE eager loading detected
+  Connection => [:batch]
+  Add to your query: .includes([:batch])
+Call stack
+  /home/ror/school_app/app/views/courses/request_review.html.erb:17:in `block in _app_views_courses_request_review_html_erb___1935111634060434521_762260'
+  /home/ror/school_app/app/views/courses/request_review.html.erb:12:in `_app_views_courses_request_review_html_erb___1935111634060434521_762260'
+
+2023-03-02 22:10:13[WARN] user: ror
+GET /courses/request_review
+USE eager loading detected
+  Connection => [:school]
+  Add to your query: .includes([:school])
+Call stack
+  /home/ror/school_app/app/views/courses/request_review.html.erb:18:in `block in _app_views_courses_request_review_html_erb___1935111634060434521_762260'
+  /home/ror/school_app/app/views/courses/request_review.html.erb:12:in `_app_views_courses_request_review_html_erb___1935111634060434521_762260'
+
+2023-03-02 22:10:57[WARN] user: ror
+GET /courses/request_review
+USE eager loading detected
+  Connection => [:course]
+  Add to your query: .includes([:course])
+Call stack
+  /home/ror/school_app/app/views/courses/request_review.html.erb:15:in `block in _app_views_courses_request_review_html_erb___1935111634060434521_762260'
+  /home/ror/school_app/app/views/courses/request_review.html.erb:12:in `_app_views_courses_request_review_html_erb___1935111634060434521_762260'
+
+2023-03-02 22:10:57[WARN] user: ror
+GET /courses/request_review
+USE eager loading detected
+  Connection => [:student]
+  Add to your query: .includes([:student])
+Call stack
+  /home/ror/school_app/app/views/courses/request_review.html.erb:16:in `block in _app_views_courses_request_review_html_erb___1935111634060434521_762260'
+  /home/ror/school_app/app/views/courses/request_review.html.erb:12:in `_app_views_courses_request_review_html_erb___1935111634060434521_762260'
+
+2023-03-02 22:10:57[WARN] user: ror
+GET /courses/request_review
+USE eager loading detected
+  Connection => [:batch]
+  Add to your query: .includes([:batch])
+Call stack
+  /home/ror/school_app/app/views/courses/request_review.html.erb:17:in `block in _app_views_courses_request_review_html_erb___1935111634060434521_762260'
+  /home/ror/school_app/app/views/courses/request_review.html.erb:12:in `_app_views_courses_request_review_html_erb___1935111634060434521_762260'
+
+2023-03-02 22:10:57[WARN] user: ror
+GET /courses/request_review
+USE eager loading detected
+  Connection => [:school]
+  Add to your query: .includes([:school])
+Call stack
+  /home/ror/school_app/app/views/courses/request_review.html.erb:18:in `block in _app_views_courses_request_review_html_erb___1935111634060434521_762260'
+  /home/ror/school_app/app/views/courses/request_review.html.erb:12:in `_app_views_courses_request_review_html_erb___1935111634060434521_762260'
+
+2023-03-02 22:12:36[WARN] user: ror
+GET /courses/request_review
+USE eager loading detected
+  Connection => [:school]
+  Add to your query: .includes([:school])
+Call stack
+  /home/ror/school_app/app/views/courses/request_review.html.erb:18:in `block in _app_views_courses_request_review_html_erb___1935111634060434521_762260'
+  /home/ror/school_app/app/views/courses/request_review.html.erb:12:in `_app_views_courses_request_review_html_erb___1935111634060434521_762260'
+
+2023-03-02 22:12:40[WARN] user: ror
+GET /courses/request_review
+USE eager loading detected
+  Connection => [:school]
+  Add to your query: .includes([:school])
+Call stack
+  /home/ror/school_app/app/views/courses/request_review.html.erb:18:in `block in _app_views_courses_request_review_html_erb___1935111634060434521_762260'
+  /home/ror/school_app/app/views/courses/request_review.html.erb:12:in `_app_views_courses_request_review_html_erb___1935111634060434521_762260'
+
+2023-03-02 22:22:41[WARN] user: ror
+GET /courses/1
+AVOID eager loading detected
+  Course => [:batch, :students, :connections]
+  Remove from your query: .includes([:batch, :students, :connections])
+Call stack
+  /home/ror/school_app/app/controllers/courses_controller.rb:88:in `set_course'
+
+2023-03-02 22:22:41[WARN] user: ror
+GET /courses/1
+AVOID eager loading detected
+  Connection => [:student]
+  Remove from your query: .includes([:student])
+Call stack
+  /home/ror/school_app/app/controllers/courses_controller.rb:88:in `set_course'
+
+2023-03-03 16:43:06[WARN] user: ror
+GET /dashboards/request_review
+USE eager loading detected
+  Connection => [:course]
+  Add to your query: .includes([:course])
+Call stack
+  /home/ror/school_app/app/views/dashboards/request_review.html.erb:15:in `block in _app_views_dashboards_request_review_html_erb___2414503680002373041_67820'
+  /home/ror/school_app/app/views/dashboards/request_review.html.erb:12:in `_app_views_dashboards_request_review_html_erb___2414503680002373041_67820'
+
+2023-03-03 19:02:56[WARN] user: ror
+GET /dashboards/list_school
+AVOID eager loading detected
+  School => [:courses, :connections, :batches, :students]
+  Remove from your query: .includes([:courses, :connections, :batches, :students])
+Call stack
+  /home/ror/school_app/app/views/dashboards/list_school.html.erb:15:in `block in _app_views_dashboards_list_school_html_erb___475314336849291151_172880'
+  /home/ror/school_app/app/views/dashboards/list_school.html.erb:12:in `_app_views_dashboards_list_school_html_erb___475314336849291151_172880'
+
+2023-03-03 19:02:56[WARN] user: ror
+GET /dashboards/list_school
+AVOID eager loading detected
+  Connection => [:course, :student]
+  Remove from your query: .includes([:course, :student])
+Call stack
+  /home/ror/school_app/app/views/dashboards/list_school.html.erb:1:in `_app_views_dashboards_list_school_html_erb___475314336849291151_172880'
+
+2023-03-03 19:18:26[WARN] user: ror
+GET /dashboards/request_review
+AVOID eager loading detected
+  Connection => [:course, :batch, :student, :school]
+  Remove from your query: .includes([:course, :batch, :student, :school])
+Call stack
+  /home/ror/school_app/app/controllers/dashboards_controller.rb:27:in `request_review'
+
+2023-03-03 20:19:49[WARN] user: ror
+GET /dashboards/list_school
+USE eager loading detected
+  School => [:owner]
+  Add to your query: .includes([:owner])
+Call stack
+  /home/ror/school_app/app/views/dashboards/list_school.html.erb:15:in `block in _app_views_dashboards_list_school_html_erb___475314336849291151_660900'
+  /home/ror/school_app/app/views/dashboards/list_school.html.erb:12:in `_app_views_dashboards_list_school_html_erb___475314336849291151_660900'
+
+2023-03-03 20:20:06[WARN] user: ror
+GET /dashboards/list_school
+USE eager loading detected
+  School => [:owner]
+  Add to your query: .includes([:owner])
+Call stack
+  /home/ror/school_app/app/views/dashboards/list_school.html.erb:15:in `block in _app_views_dashboards_list_school_html_erb___475314336849291151_660900'
+  /home/ror/school_app/app/views/dashboards/list_school.html.erb:12:in `_app_views_dashboards_list_school_html_erb___475314336849291151_660900'
+
+2023-03-03 20:22:15[WARN] user: ror
+GET /dashboards/list_school
+USE eager loading detected
+  School => [:owner]
+  Add to your query: .includes([:owner])
+Call stack
+  /home/ror/school_app/app/views/dashboards/list_school.html.erb:15:in `block in _app_views_dashboards_list_school_html_erb___475314336849291151_660900'
+  /home/ror/school_app/app/views/dashboards/list_school.html.erb:12:in `_app_views_dashboards_list_school_html_erb___475314336849291151_660900'
+
+2023-03-03 20:56:05[WARN] user: ror
+GET /dashboards/list_batch
+AVOID eager loading detected
+  Batch => [:connections, :courses]
+  Remove from your query: .includes([:connections, :courses])
+Call stack
+  /home/ror/school_app/app/views/dashboards/list_batch.html.erb:17:in `block in _app_views_dashboards_list_batch_html_erb___4317013288037168397_722620'
+  /home/ror/school_app/app/views/dashboards/list_batch.html.erb:12:in `_app_views_dashboards_list_batch_html_erb___4317013288037168397_722620'
+
+2023-03-03 20:56:15[WARN] user: ror
+GET /dashboards/list_batch
+AVOID eager loading detected
+  Batch => [:connections, :courses]
+  Remove from your query: .includes([:connections, :courses])
+Call stack
+  /home/ror/school_app/app/views/dashboards/list_batch.html.erb:17:in `block in _app_views_dashboards_list_batch_html_erb___4317013288037168397_722620'
+  /home/ror/school_app/app/views/dashboards/list_batch.html.erb:12:in `_app_views_dashboards_list_batch_html_erb___4317013288037168397_722620'
+
+2023-03-03 22:50:13[WARN] user: ror
+GET /dashboards/list_school_admin
+USE eager loading detected
+  User => [:own_school]
+  Add to your query: .includes([:own_school])
+Call stack
+  /home/ror/school_app/app/views/dashboards/list_school_admin.html.erb:18:in `block in _app_views_dashboards_list_school_admin_html_erb___3731585686751924355_940680'
+  /home/ror/school_app/app/views/dashboards/list_school_admin.html.erb:12:in `_app_views_dashboards_list_school_admin_html_erb___3731585686751924355_940680'
+
+2023-03-03 22:50:23[WARN] user: ror
+GET /dashboards/list_school_admin
+USE eager loading detected
+  User => [:own_school]
+  Add to your query: .includes([:own_school])
+Call stack
+  /home/ror/school_app/app/views/dashboards/list_school_admin.html.erb:18:in `block in _app_views_dashboards_list_school_admin_html_erb___3731585686751924355_940680'
+  /home/ror/school_app/app/views/dashboards/list_school_admin.html.erb:12:in `_app_views_dashboards_list_school_admin_html_erb___3731585686751924355_940680'
+
+2023-03-03 22:50:37[WARN] user: ror
+GET /dashboards/list_school_admin
+USE eager loading detected
+  User => [:own_school]
+  Add to your query: .includes([:own_school])
+Call stack
+  /home/ror/school_app/app/views/dashboards/list_school_admin.html.erb:18:in `block in _app_views_dashboards_list_school_admin_html_erb___3731585686751924355_940680'
+  /home/ror/school_app/app/views/dashboards/list_school_admin.html.erb:12:in `_app_views_dashboards_list_school_admin_html_erb___3731585686751924355_940680'
+
+2023-03-03 22:50:53[WARN] user: ror
+GET /dashboards/list_school_admin
+USE eager loading detected
+  User => [:own_school]
+  Add to your query: .includes([:own_school])
+Call stack
+  /home/ror/school_app/app/views/dashboards/list_school_admin.html.erb:18:in `block in _app_views_dashboards_list_school_admin_html_erb___3731585686751924355_940680'
+  /home/ror/school_app/app/views/dashboards/list_school_admin.html.erb:12:in `_app_views_dashboards_list_school_admin_html_erb___3731585686751924355_940680'
+
+2023-03-03 22:51:19[WARN] user: ror
+GET /dashboards/list_school_admin
+USE eager loading detected
+  User => [:own_school]
+  Add to your query: .includes([:own_school])
+Call stack
+  /home/ror/school_app/app/views/dashboards/list_school_admin.html.erb:18:in `block in _app_views_dashboards_list_school_admin_html_erb___3731585686751924355_940680'
+  /home/ror/school_app/app/views/dashboards/list_school_admin.html.erb:12:in `_app_views_dashboards_list_school_admin_html_erb___3731585686751924355_940680'
+
+2023-03-03 22:51:24[WARN] user: ror
+GET /dashboards/list_school_admin
+USE eager loading detected
+  User => [:own_school]
+  Add to your query: .includes([:own_school])
+Call stack
+  /home/ror/school_app/app/views/dashboards/list_school_admin.html.erb:18:in `block in _app_views_dashboards_list_school_admin_html_erb___3731585686751924355_940680'
+  /home/ror/school_app/app/views/dashboards/list_school_admin.html.erb:12:in `_app_views_dashboards_list_school_admin_html_erb___3731585686751924355_940680'
+
+2023-03-04 11:09:39[WARN] user: ror
+GET /dashboards/list_school_admin
+AVOID eager loading detected
+  User => [:own_schools]
+  Remove from your query: .includes([:own_schools])
+Call stack
+  /home/ror/school_app/app/views/dashboards/list_school_admin.html.erb:14:in `_app_views_dashboards_list_school_admin_html_erb___209332215466783460_88860'
+
+2023-03-04 11:49:02[WARN] user: ror
+DELETE /dashboards/2
+USE eager loading detected
+  School => [:batches]
+  Add to your query: .includes([:batches])
+Call stack
+  /home/ror/school_app/app/controllers/dashboards_controller.rb:44:in `destroy'
+
+2023-03-04 11:49:02[WARN] user: ror
+DELETE /dashboards/2
+USE eager loading detected
+  Course => [:connections]
+  Add to your query: .includes([:connections])
+Call stack
+  /home/ror/school_app/app/controllers/dashboards_controller.rb:44:in `destroy'
+
+2023-03-04 11:49:02[WARN] user: ror
+DELETE /dashboards/2
+USE eager loading detected
+  School => [:connections]
+  Add to your query: .includes([:connections])
+Call stack
+  /home/ror/school_app/app/controllers/dashboards_controller.rb:44:in `destroy'
+

@@ -1,0 +1,58 @@
+<% if @list_schools.present? %>
+<h3 class="m-2">
+  List of schools
+  <% if current_user.student? %>
+  <small class="text-muted ">you are in</small>
+</h3>
+<% end %>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Owner Name</th>
+      <th scope="col">School Name</th>
+      <th scope="col">School address</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @list_schools.each do |school| %>
+    <tr>
+      <th scope="row"><%= school&.id %></th> 
+      <th><%= school&.owner&.first_name %></th>
+      <td><%= link_to school&.name ,school_path({id: school.id}) %></td>
+      <td><%= school&.address %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+<% if current_user.admin? %>
+<div class="display-1"></div>
+<div class="display-1"></div>
+<h6><%= link_to "New School", new_school_path, class: "btn btn-primary mt-2 ml-2" %></h6>
+<% end %>
+<% elsif @school.present? %>
+<div class="display-1 display-line-height border border-dark"></div>
+<div class="col-sm-6 mt-2">
+  <div class="card m-2">
+    <div class="card-body">
+      <h5 class="card-title"><strong>Id:</strong><%=  @school.name %></h5>
+      <p class="card-text"><strong>School Address:</strong><%=  @school.address %></p>
+      <p class="card-text"><strong>School Owner name:</strong><%=  @school&.owner&.first_name %></p>
+    </div>
+  </div>
+</div>
+<%else %>
+<%if current_user.school_admin? %>
+<h3 class="m-2">
+  Request Admin 
+  <small class="text-muted ">to Add school.</small>
+</h3>
+<div class="display-1 display-line-height border border-dark"></div>
+<%else%>
+<h3 class="m-2">
+  Your request are 
+  <small class="text-muted ">pending for approval</small>
+</h3>
+<div class="display-1 display-line-height border border-dark"></div>
+<% end %>
+<% end %>

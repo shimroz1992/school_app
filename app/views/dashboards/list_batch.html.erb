@@ -1,0 +1,40 @@
+<% if @list_batch.present? %>
+<h3 class="m-2">
+  List of batches
+  <% if current_user.student? %>
+  <small class="text-muted ">you are in</small>
+</h3>
+<% end %>
+<div class="display-1 display-line-height border border-dark"></div>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Batch Name</th>
+      <th scope="col">Max count</th>
+      <th scope="col">School</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @list_batch.each do |batch| %>
+    <tr>
+      <th scope="row"><%= batch&.id %></th> 
+      <th><%= link_to "#{batch&.name}",batch_path(batch)%></th>
+      <td><%= batch&.max_count %></td>
+      <td><%= batch&.school&.name %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+<%else %>
+<h3 class="m-2">
+  Your request are 
+  <small class="text-muted ">pending for approval</small>
+</h3>
+<div class="display-1 display-line-height border border-dark"></div>
+<% end %>
+<% if current_user.school_admin? or current_user.admin?%>
+<div class="display-1"></div>
+<div class="display-1"></div>
+<h6 class="m-2"><%= link_to "New Batch", new_batch_path, class: "btn btn-primary mt-2 ml-2" %></h6>
+<% end %>

@@ -1,0 +1,21 @@
+<div class="display-1 display-line-height border border-dark"></div>
+<div class="col-sm-6 mt-2">
+  <div class="card m-2">  <div class="card-body">
+    <h4 class="card-title">School </h4>
+    <ul class="list-group">
+      <li class="list-group-item"><strong>Name:</strong> <%= @school.name %></li><br>
+      <li class="list-group-item"><strong>Address:</strong> <%= @school.address %></li>
+    </ul>
+    <div class="card-body">
+    </div>
+  </div>
+  <div class="card-body">
+    <% if current_user.admin? %>
+    <%= link_to "Edit School", edit_school_path(@school), class: "btn btn-sm btn-primary" %> |
+    <%= link_to "Destroy school", @school,data: { "turbo-method": :delete,turbo_confirm: "Are you sure?"},class: "btn btn-sm btn-danger m-2"%>
+    <% end %>
+    <div class="display-1 display-line-height border"></div>
+    <%= link_to 'Back schools', list_school_dashboards_path , class: "btn btn-sm btn-secondary m-2"  %>
+  </div>
+</div>
+</div>

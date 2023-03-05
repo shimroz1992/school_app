@@ -1,0 +1,48 @@
+<% if @request_review.present?%>
+<h3 class="m-2">
+  List of joining request
+  <% if current_user.student? %>
+  <small class="text-muted ">you have apply</small>
+</h3>
+<% end %>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Request Id</th>
+      <th scope="col">Course Name</th>
+      <th scope="col">Student Name</th>
+      <th scope="col">Batch</th>
+      <th scope="col">School</th>
+      <% if current_user.student?  or current_user.admin? %>
+      <th scope="col">Status</th>
+      <% end %>
+    </tr>
+  </thead>
+  <tbody>
+    <% @request_review.each do |request| %>
+    <tr>
+      <th scope="row"><%= request&.id %></th> 
+      <th><%= request&.course&.name %></th>
+      <td><%= request&.student&.first_name %></td>
+      <td><%= request&.batch&.name %></td>
+      <td><%= request&.school&.name %></td>
+      <% if request&.status? %>
+      <td>Approved</td>
+      <% else%>
+      <td>Pending</td>
+      <% end %>
+      <% if current_user.school_admin? or current_user.admin? %>
+      <td><%= link_to "Reject request",connection_path(request),data: { turbo_method: :delete,turbo_confirm: "Are you sure?"},class: "btn btn-danger mt-2 ml-2" %></td>
+      <td><%= link_to "Approve request",approve_request_dashboards_path({id: request}),data: { turbo_confirm: "Are you sure?"},class: "btn btn-primary mt-2 ml-2" %></td>
+    </tr>
+    <% end %>
+    <% end %>
+  </tbody>
+</table>
+<% else %>
+<h3 class="m-2">
+  Request to join  
+  <small class="text-muted ">new courses</small>
+</h3>
+<div class="display-1 display-line-height border border-dark"></div>
+<% end %>

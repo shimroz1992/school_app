@@ -1,0 +1,31 @@
+<h3 class="m-2">
+  List of all available Courses
+  <small class="text-muted ">for the success of your career</small>
+</h3>
+<div class="display-1 display-line-height border border-dark"></div>
+<div class="row">
+  <% @courses.each do |course| %>
+  <div class="col-sm-4 mt-2">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title"><%= course.name %><small class="text-muted "> for the <%= course.sub_name %></small></h5>
+        <div class="display-1 display-line-height border"></div>
+        <p class="card-text">Course description: <%=  course.description %></p>
+        <p class="card-text">Course tutor name: <%=  course.tutor_name %></p>
+        <p class="card-text">Course fees: <%=  course.fees %></p>
+        <p class="card-text">Course course duration: <%=  course.course_duration %></p>
+        <p class="card-text">Course start at: <%=  course.start_at %></p>
+        <p class="card-text">Course end at: <%=  course.end_at %></p>
+        <%= link_to "Show Course", course_path(course), class: "btn btn-primary" %>
+        <%= link_to "Join Course", add_request_dashboards_path({id: course}), class: "btn btn-primary" %>
+      </div>
+    </div>
+  </div>
+  <% end %>
+</div>
+<% if current_user.school_admin? or current_user.admin? %>
+<div class="display-1 display-line-height border"></div>
+<div class="actions">
+  <%= link_to "New courses", new_course_path, class: "btn btn-primary m-2" %>
+</div>
+<% end %>

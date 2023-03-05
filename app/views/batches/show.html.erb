@@ -1,0 +1,20 @@
+<h3>
+  Batch
+  <small class="text-muted ">for the success of your career</small>
+</h3>
+<div class="display-1 display-line-height border border-dark"></div>
+<div class="col-sm-6 mt-2">
+  <div class="card m-2">
+    <div class="card-body">
+      <h5 class="card-title"><strong>Batch name:</strong><%=  @batch.name %><small class="text-muted "></small></h5>
+      <p class="card-text"><strong>Batch max count:</strong><%=  @batch.max_count %></p>
+      <p class="card-text"><strong>Batch school name:</strong><%=  @batch&.school&.name %></p>
+      <% if current_user.admin? or current_user.school_admin?%>
+      <%= link_to "Edit this batch", edit_batch_path(@batch), class: "btn btn-primary m-2" %> |
+      <%= link_to "Destroy this batch", @batch,data: { turbo_method: :delete,turbo_confirm: "Are you sure?"}, class: "btn btn-danger m-2" %>
+      <% end %>
+      <div class="display-1 display-line-height border"></div>
+      <%= link_to "Back to batchs", list_batch_dashboards_path, class: "btn btn-secondary m-2" %>
+    </div>
+  </div>
+</div>

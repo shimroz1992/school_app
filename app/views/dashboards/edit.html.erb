@@ -1,0 +1,55 @@
+<h2 class="m-2">Edit School admin</h2>
+
+<%= form_with(model: @school_admin,url: dashboard_path) do |f| %>
+<% if @school_admin.errors.any? %>
+<div style="color: red">
+  <h2><%= pluralize(@school_admin.errors.count, "error") %> prohibited this course from being saved:</h2>
+
+  <ul> 
+    <% @school_admin.errors.each do |error| %>
+    <li><%= error.full_message %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
+<div class="field">
+  <%= f.label :first_name %><br />
+  <%= f.text_field :first_name , class: "form-control"%>
+</div>
+<div class="field">
+  <%= f.label :last_name %><br />
+  <%= f.text_field :last_name, class: "form-control" %>
+</div>
+<div class="field">
+  <%= f.label :role %><br />
+  <%= f.select :role,User.roles.keys ,{}, class: "form-control"%>
+</div>
+<div class="field">
+  <%= f.label :email %><br />
+  <%= f.email_field :email, autofocus: true, autocomplete: "email" , class: "form-control"%>
+</div>
+
+<div class="field">
+  <%= f.label :password %>
+  <% if @minimum_password_length %>
+  <em>(<%= @minimum_password_length %> characters minimum)</em>
+  <% end %><br />
+  <%= f.password_field :password, autocomplete: "new-password" , class: "form-control"%>
+</div>
+
+<div class="field">
+  <%= f.label :password_confirmation %><br />
+  <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control" %>
+</div>
+
+<div class="actions">
+  <%= f.submit "Update", class: "btn btn-sm btn-success m-2" %>
+</div>
+<% end %>
+<div class="display-1 display-line-height border"></div>
+<h3 class="m-2">Cancel my account</h3>
+
+<div class="m-2">Unhappy? <%= button_to "Cancel my account", registration_path(@school_admin), data: { confirm: "Are you sure?", turbo_confirm: "Are you sure?" }, method: :delete, class: "btn btn-sm btn-danger" %></div>
+<div class="actions">
+  <%= link_to "Back", :back, class: "btn btn-sm btn-secondary m-2" %>
+</div>

@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  sub_name: MyString
+  start_at: 2023-03-02 14:05:20
+  end_at: 2023-03-02 14:05:20
+  fees: MyString
+  tutor_name: MyString
+  course_duration: MyString
+
+two:
+  name: MyString
+  sub_name: MyString
+  start_at: 2023-03-02 14:05:20
+  end_at: 2023-03-02 14:05:20
+  fees: MyString
+  tutor_name: MyString
+  course_duration: MyString

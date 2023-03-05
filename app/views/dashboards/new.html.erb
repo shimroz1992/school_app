@@ -1,0 +1,54 @@
+<h1 class="m-2">New school admin</h1>
+
+<%= form_with(model: @school_admin,url: dashboards_path) do |f| %>
+<% if @school_admin.errors.any? %>
+<div style="color: red">
+  <h2><%= pluralize(@school_admin.errors.count, "error") %> prohibited this course from being saved:</h2>
+
+  <ul> 
+    <% @school_admin.errors.each do |error| %>
+    <li><%= error.full_message %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
+<div class="field">
+  <%= f.label :first_name %><br />
+  <%= f.text_field :first_name %>
+</div>
+<div class="field">
+  <%= f.label :last_name %><br />
+  <%= f.text_field :last_name %>
+</div>
+<div class="field">
+  <%= f.label :role %><br />
+  <%= f.select :role,User.roles.keys 	%>
+</div>
+<div class="field">
+  <%= f.label :email %><br />
+  <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+</div>
+
+<div class="field">
+  <%= f.label :password %>
+  <% if @minimum_password_length %>
+  <em>(<%= @minimum_password_length %> characters minimum)</em>
+  <% end %><br />
+  <%= f.password_field :password, autocomplete: "new-password" %>
+</div>
+
+<div class="field">
+  <%= f.label :password_confirmation %><br />
+  <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+</div>
+
+<div class="actions">
+  <%= f.submit "Sign up" %>
+</div>
+<% end %>
+
+<br>
+
+<div>
+  <%= link_to "Back to courses", dashboards_path, class: "btn btn-sm btn-secondary m-2" %>
+</div>
